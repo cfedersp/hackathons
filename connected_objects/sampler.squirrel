@@ -1,0 +1,21 @@
+function samplesReady(buffer, length)
+{
+if (length > 0) {
+agent.send("bufferFull", buffer);
+server.log(length);
+} else {
+server.log("Overrun");
+}
+}
+function stopSampler()
+{
+server.log("stop");
+hardware.sampler.stop();
+}
+buffer1 <- blob(2000);
+buffer2 <- blob(2000);
+ 
+hardware.sampler.configure(hardware.pin2, 1000, [buffer1, buffer2], samplesReady);
+hardware.sampler.start();
+ 
+imp.wakeup(4, stopSampler);

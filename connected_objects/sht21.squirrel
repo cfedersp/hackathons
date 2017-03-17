@@ -1,0 +1,46 @@
+sh221 humidity sensor
+
+1 solder 4.7k resistors btw pin 8 and power and pin 9 and power
+read sensor spec for i2c frequency, and single shot
+
+
+class TempSensor {
+ 
+_i2c = null;
+_addr = null;
+static SHT21_I2C_ADDRESS = "0x80";
+static START_TEMP = "\xf3"; //"\xF3";
+static START_HUMIDITY = "\xF5";
+
+
+constructor(i2c, address) {
+_i2c = i2c;
+_addr = address;
+}
+function get() {
+    //TODO: configure device with resolution
+    
+    _i2c.write(_addr, START_TEMP);
+    imp.sleep(0.085);
+    local tempResult = _i2c.read(_addr, "", 2); //array of 2 bytes. Temp is 12 bit res. First one contains 6 bits of useful info 
+    if(tempResult != null) {
+    local combinedTemp = tempResult[0] << 6 + ((tempResult[1] & 0xFF) >> 2);
+    local normalizedTemp = 175.72 * combinedTemp/2^16 -46.85;
+    
+    return normalizedTemp;
+    } else {
+        return 0;
+    }
+    }
+    //return 0;
+  
+ 
+}
+}
+ 
+// configure i2c bus
+hardware.i2c89.configure(CLOCK_SPEED_400_KHZ);
+// create TempSensor object
+tempSensor <- TempSensor(hardware.i2c89, 0x81);
+// read temperature
+server.log(tempSensor.get());

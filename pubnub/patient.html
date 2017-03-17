@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Patient Chat Demo</title>
+<link href="javascript/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="javascript/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+<script src="javascript/jquery-2.1.1.min.js"></script>
+<script src="javascript/purl.js"></script>
+<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+<script src="javascript/webrtc-beta-pubnub.0.7.0.min.js"></script>
+<script src="javascript/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+<script>
+$( document ).ready(function() {
+//alert("starting setup");
+var uuid = $.url().param("patientid");
+var wcPresenceChannel = 'wellnessconnected_carecycle_presence';
+
+var pubnub = PUBNUB.init({
+	uuid: uuid,
+	ssl: 'true',
+	secret_key: 'sec-c-MGZiOTUzMWEtN2MxMS00MzQwLTkxZmItYjUwZTc2NDJhZmZl',
+	cipher_key: 'aE5sBw%Opiej$FIej*f292KC',
+	origin        : 'pubsub.pubnub.com',
+  publish_key: 'pub-c-44c9f282-4377-40cc-a3c0-967aca066885',
+  subscribe_key: 'sub-c-a19b5c9c-4db6-11e2-ab93-12313f022c90'
+});
+
+// Here is where you can use PubNub Presence to get the UUID of the other user
+
+pubnub.here_now({
+channel : wcPresenceChannel,
+callback : function(m){console.log('presence callback: ' + JSON.stringify(m))}
+});
+
+pubnub.subscribe({
+   channel: wcPresenceChannel,
+   presence: function(message) {
+       console.log('presence output: ', message);
+   },
+   message: function(message) {
+       console.log('message output: ', message);
+   },
+   state: {
+     age: 67,
+     fullName: $.url().param("fullName"),
+     role: 'patient',
+     country: 'US',
+     appstate: 'foreground',
+     latlong: '51.5072° N, 0.1275° W'
+ },
+   heartbeat: 30
+ });
+
+
+var box = PUBNUB.$("box");
+var input = PUBNUB.$("input");
+var channel = 'wellnessconnected-carecycle-chat';
+
+PUBNUB.subscribe({
+	channel : channel,
+	callback : function(text) { box.innerHTML = (''+text).replace( /[<>]/g, '' ) + '<br>' + box.innerHTML }
+});
+
+PUBNUB.bind( 'keyup', input, function(e) {
+	if((e.keyCode || e.charCode) === 13) {
+		PUBNUB.publish({
+			channel : channel, 
+			message : input.value, 
+			x : input.value
+		}); // end publish
+		input.value='';
+	 }
+} ) // end keyup handler
+
+//pubnub.publish({
+// user: uuid, // This tells PubNub to use a WebRTC Data Channel
+//  message: "Hello World!"
+//});
+
+//alert("finished setup");
+});
+</script>
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
+</head>
+<body>
+
+
+Enter Chat and press enter
+<div><input id="input" placeholder="you-chat-here"/></div>
+ 
+Chat Output
+<div id="box"></div>
+
+</body>
+</html>

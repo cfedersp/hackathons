@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093A657818E8157F002367EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A657718E8157F002367EE /* Foundation.framework */; };
+		093A657A18E8157F002367EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A657918E8157F002367EE /* CoreGraphics.framework */; };
+		093A657C18E8157F002367EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A657B18E8157F002367EE /* UIKit.framework */; };
+		093A658218E8157F002367EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093A658018E8157F002367EE /* InfoPlist.strings */; };
+		093A658418E8157F002367EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A658318E8157F002367EE /* main.m */; };
+		093A658818E8157F002367EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A658718E8157F002367EE /* AppDelegate.m */; };
+		093A658B18E8157F002367EE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093A658918E8157F002367EE /* Main_iPhone.storyboard */; };
+		093A658E18E8157F002367EE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093A658C18E8157F002367EE /* Main_iPad.storyboard */; };
+		093A659118E8157F002367EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A659018E8157F002367EE /* ViewController.m */; };
+		093A659318E8157F002367EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093A659218E8157F002367EE /* Images.xcassets */; };
+		093A659A18E8157F002367EE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A659918E8157F002367EE /* XCTest.framework */; };
+		093A659B18E8157F002367EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A657718E8157F002367EE /* Foundation.framework */; };
+		093A659C18E8157F002367EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A657B18E8157F002367EE /* UIKit.framework */; };
+		093A65A418E8157F002367EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093A65A218E8157F002367EE /* InfoPlist.strings */; };
+		093A65A618E8157F002367EE /* CigarSentinelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A65A518E8157F002367EE /* CigarSentinelTests.m */; };
+		093A65FB18E81DA4002367EE /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A65FA18E81DA4002367EE /* SRWebSocket.m */; };
+		093A65FC18E81DA4002367EE /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A65FA18E81DA4002367EE /* SRWebSocket.m */; };
+		093A661818E81ED6002367EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 093A65FE18E81ED6002367EE /* .gitignore */; };
+		093A661918E81ED6002367EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 093A65FE18E81ED6002367EE /* .gitignore */; };
+		093A661A18E81ED6002367EE /* XivelyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660118E81ED6002367EE /* XivelyAPI.m */; };
+		093A661B18E81ED6002367EE /* XivelyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660118E81ED6002367EE /* XivelyAPI.m */; };
+		093A661C18E81ED6002367EE /* XivelyDatapointCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660318E81ED6002367EE /* XivelyDatapointCollection.m */; };
+		093A661D18E81ED6002367EE /* XivelyDatapointCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660318E81ED6002367EE /* XivelyDatapointCollection.m */; };
+		093A661E18E81ED6002367EE /* XivelyDatapointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660618E81ED6002367EE /* XivelyDatapointModel.m */; };
+		093A661F18E81ED6002367EE /* XivelyDatapointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660618E81ED6002367EE /* XivelyDatapointModel.m */; };
+		093A662018E81ED6002367EE /* XivelyDatastreamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660818E81ED6002367EE /* XivelyDatastreamCollection.m */; };
+		093A662118E81ED6002367EE /* XivelyDatastreamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660818E81ED6002367EE /* XivelyDatastreamCollection.m */; };
+		093A662218E81ED6002367EE /* XivelyDatastreamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660A18E81ED6002367EE /* XivelyDatastreamModel.m */; };
+		093A662318E81ED6002367EE /* XivelyDatastreamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660A18E81ED6002367EE /* XivelyDatastreamModel.m */; };
+		093A662418E81ED6002367EE /* XivelyFeedCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660C18E81ED6002367EE /* XivelyFeedCollection.m */; };
+		093A662518E81ED6002367EE /* XivelyFeedCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660C18E81ED6002367EE /* XivelyFeedCollection.m */; };
+		093A662618E81ED6002367EE /* XivelyFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660F18E81ED6002367EE /* XivelyFeedModel.m */; };
+		093A662718E81ED6002367EE /* XivelyFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A660F18E81ED6002367EE /* XivelyFeedModel.m */; };
+		093A662818E81ED6002367EE /* XivelyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A661118E81ED6002367EE /* XivelyModel.m */; };
+		093A662918E81ED6002367EE /* XivelyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A661118E81ED6002367EE /* XivelyModel.m */; };
+		093A662A18E81ED6002367EE /* XivelyRequestable.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A661418E81ED6002367EE /* XivelyRequestable.m */; };
+		093A662B18E81ED6002367EE /* XivelyRequestable.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A661418E81ED6002367EE /* XivelyRequestable.m */; };
+		093A662C18E81ED6002367EE /* XivelySubscribable.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A661618E81ED6002367EE /* XivelySubscribable.m */; };
+		093A662D18E81ED6002367EE /* XivelySubscribable.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A661618E81ED6002367EE /* XivelySubscribable.m */; };
+		093A662F18E86CA3002367EE /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A662E18E86CA3002367EE /* libicucore.dylib */; };
+		1566FBE467074990B622FCED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7203DC8B06BE453EB5A705BF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		093A659D18E8157F002367EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093A656C18E8157F002367EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093A657318E8157F002367EE;
+			remoteInfo = CigarSentinel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		093A657418E8157F002367EE /* CigarSentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CigarSentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		093A657718E8157F002367EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		093A657918E8157F002367EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		093A657B18E8157F002367EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		093A657F18E8157F002367EE /* CigarSentinel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CigarSentinel-Info.plist"; sourceTree = "<group>"; };
+		093A658118E8157F002367EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		093A658318E8157F002367EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		093A658518E8157F002367EE /* CigarSentinel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CigarSentinel-Prefix.pch"; sourceTree = "<group>"; };
+		093A658618E8157F002367EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		093A658718E8157F002367EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		093A658A18E8157F002367EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		093A658D18E8157F002367EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		093A658F18E8157F002367EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		093A659018E8157F002367EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		093A659218E8157F002367EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		093A659818E8157F002367EE /* CigarSentinelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CigarSentinelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		093A659918E8157F002367EE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		093A65A118E8157F002367EE /* CigarSentinelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CigarSentinelTests-Info.plist"; sourceTree = "<group>"; };
+		093A65A318E8157F002367EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		093A65A518E8157F002367EE /* CigarSentinelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CigarSentinelTests.m; sourceTree = "<group>"; };
+		093A65F818E81DA4002367EE /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		093A65F918E81DA4002367EE /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		093A65FA18E81DA4002367EE /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		093A65FE18E81ED6002367EE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		093A65FF18E81ED6002367EE /* Xively.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xively.h; sourceTree = "<group>"; };
+		093A660018E81ED6002367EE /* XivelyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyAPI.h; sourceTree = "<group>"; };
+		093A660118E81ED6002367EE /* XivelyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyAPI.m; sourceTree = "<group>"; };
+		093A660218E81ED6002367EE /* XivelyDatapointCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyDatapointCollection.h; sourceTree = "<group>"; };
+		093A660318E81ED6002367EE /* XivelyDatapointCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyDatapointCollection.m; sourceTree = "<group>"; };
+		093A660418E81ED6002367EE /* XivelyDatapointCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyDatapointCollectionDelegate.h; sourceTree = "<group>"; };
+		093A660518E81ED6002367EE /* XivelyDatapointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyDatapointModel.h; sourceTree = "<group>"; };
+		093A660618E81ED6002367EE /* XivelyDatapointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyDatapointModel.m; sourceTree = "<group>"; };
+		093A660718E81ED6002367EE /* XivelyDatastreamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyDatastreamCollection.h; sourceTree = "<group>"; };
+		093A660818E81ED6002367EE /* XivelyDatastreamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyDatastreamCollection.m; sourceTree = "<group>"; };
+		093A660918E81ED6002367EE /* XivelyDatastreamModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyDatastreamModel.h; sourceTree = "<group>"; };
+		093A660A18E81ED6002367EE /* XivelyDatastreamModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyDatastreamModel.m; sourceTree = "<group>"; };
+		093A660B18E81ED6002367EE /* XivelyFeedCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyFeedCollection.h; sourceTree = "<group>"; };
+		093A660C18E81ED6002367EE /* XivelyFeedCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyFeedCollection.m; sourceTree = "<group>"; };
+		093A660D18E81ED6002367EE /* XivelyFeedCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyFeedCollectionDelegate.h; sourceTree = "<group>"; };
+		093A660E18E81ED6002367EE /* XivelyFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyFeedModel.h; sourceTree = "<group>"; };
+		093A660F18E81ED6002367EE /* XivelyFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyFeedModel.m; sourceTree = "<group>"; };
+		093A661018E81ED6002367EE /* XivelyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyModel.h; sourceTree = "<group>"; };
+		093A661118E81ED6002367EE /* XivelyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyModel.m; sourceTree = "<group>"; };
+		093A661218E81ED6002367EE /* XivelyModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyModelDelegate.h; sourceTree = "<group>"; };
+		093A661318E81ED6002367EE /* XivelyRequestable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyRequestable.h; sourceTree = "<group>"; };
+		093A661418E81ED6002367EE /* XivelyRequestable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyRequestable.m; sourceTree = "<group>"; };
+		093A661518E81ED6002367EE /* XivelySubscribable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelySubscribable.h; sourceTree = "<group>"; };
+		093A661618E81ED6002367EE /* XivelySubscribable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelySubscribable.m; sourceTree = "<group>"; };
+		093A661718E81ED6002367EE /* XivelySubscribableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelySubscribableDelegate.h; sourceTree = "<group>"; };
+		093A662E18E86CA3002367EE /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		7203DC8B06BE453EB5A705BF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		882E9CCDEF0341B9A4167E43 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093A657118E8157F002367EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A662F18E86CA3002367EE /* libicucore.dylib in Frameworks */,
+				093A657A18E8157F002367EE /* CoreGraphics.framework in Frameworks */,
+				093A657C18E8157F002367EE /* UIKit.framework in Frameworks */,
+				093A657818E8157F002367EE /* Foundation.framework in Frameworks */,
+				1566FBE467074990B622FCED /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093A659518E8157F002367EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A659A18E8157F002367EE /* XCTest.framework in Frameworks */,
+				093A659C18E8157F002367EE /* UIKit.framework in Frameworks */,
+				093A659B18E8157F002367EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093A656B18E8157F002367EE = {
+			isa = PBXGroup;
+			children = (
+				093A657D18E8157F002367EE /* CigarSentinel */,
+				093A659F18E8157F002367EE /* CigarSentinelTests */,
+				093A657618E8157F002367EE /* Frameworks */,
+				093A657518E8157F002367EE /* Products */,
+				882E9CCDEF0341B9A4167E43 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		093A657518E8157F002367EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				093A657418E8157F002367EE /* CigarSentinel.app */,
+				093A659818E8157F002367EE /* CigarSentinelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		093A657618E8157F002367EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				093A662E18E86CA3002367EE /* libicucore.dylib */,
+				093A65FD18E81ED6002367EE /* XivelyObjectiveC */,
+				093A65F718E81DA4002367EE /* SocketRocket */,
+				093A657718E8157F002367EE /* Foundation.framework */,
+				093A657918E8157F002367EE /* CoreGraphics.framework */,
+				093A657B18E8157F002367EE /* UIKit.framework */,
+				093A659918E8157F002367EE /* XCTest.framework */,
+				7203DC8B06BE453EB5A705BF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		093A657D18E8157F002367EE /* CigarSentinel */ = {
+			isa = PBXGroup;
+			children = (
+				093A658618E8157F002367EE /* AppDelegate.h */,
+				093A658718E8157F002367EE /* AppDelegate.m */,
+				093A658918E8157F002367EE /* Main_iPhone.storyboard */,
+				093A658C18E8157F002367EE /* Main_iPad.storyboard */,
+				093A658F18E8157F002367EE /* ViewController.h */,
+				093A659018E8157F002367EE /* ViewController.m */,
+				093A659218E8157F002367EE /* Images.xcassets */,
+				093A657E18E8157F002367EE /* Supporting Files */,
+			);
+			path = CigarSentinel;
+			sourceTree = "<group>";
+		};
+		093A657E18E8157F002367EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093A657F18E8157F002367EE /* CigarSentinel-Info.plist */,
+				093A658018E8157F002367EE /* InfoPlist.strings */,
+				093A658318E8157F002367EE /* main.m */,
+				093A658518E8157F002367EE /* CigarSentinel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		093A659F18E8157F002367EE /* CigarSentinelTests */ = {
+			isa = PBXGroup;
+			children = (
+				093A65A518E8157F002367EE /* CigarSentinelTests.m */,
+				093A65A018E8157F002367EE /* Supporting Files */,
+			);
+			path = CigarSentinelTests;
+			sourceTree = "<group>";
+		};
+		093A65A018E8157F002367EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093A65A118E8157F002367EE /* CigarSentinelTests-Info.plist */,
+				093A65A218E8157F002367EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		093A65F718E81DA4002367EE /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				093A65F818E81DA4002367EE /* SocketRocket-Prefix.pch */,
+				093A65F918E81DA4002367EE /* SRWebSocket.h */,
+				093A65FA18E81DA4002367EE /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		093A65FD18E81ED6002367EE /* XivelyObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				093A65FE18E81ED6002367EE /* .gitignore */,
+				093A65FF18E81ED6002367EE /* Xively.h */,
+				093A660018E81ED6002367EE /* XivelyAPI.h */,
+				093A660118E81ED6002367EE /* XivelyAPI.m */,
+				093A660218E81ED6002367EE /* XivelyDatapointCollection.h */,
+				093A660318E81ED6002367EE /* XivelyDatapointCollection.m */,
+				093A660418E81ED6002367EE /* XivelyDatapointCollectionDelegate.h */,
+				093A660518E81ED6002367EE /* XivelyDatapointModel.h */,
+				093A660618E81ED6002367EE /* XivelyDatapointModel.m */,
+				093A660718E81ED6002367EE /* XivelyDatastreamCollection.h */,
+				093A660818E81ED6002367EE /* XivelyDatastreamCollection.m */,
+				093A660918E81ED6002367EE /* XivelyDatastreamModel.h */,
+				093A660A18E81ED6002367EE /* XivelyDatastreamModel.m */,
+				093A660B18E81ED6002367EE /* XivelyFeedCollection.h */,
+				093A660C18E81ED6002367EE /* XivelyFeedCollection.m */,
+				093A660D18E81ED6002367EE /* XivelyFeedCollectionDelegate.h */,
+				093A660E18E81ED6002367EE /* XivelyFeedModel.h */,
+				093A660F18E81ED6002367EE /* XivelyFeedModel.m */,
+				093A661018E81ED6002367EE /* XivelyModel.h */,
+				093A661118E81ED6002367EE /* XivelyModel.m */,
+				093A661218E81ED6002367EE /* XivelyModelDelegate.h */,
+				093A661318E81ED6002367EE /* XivelyRequestable.h */,
+				093A661418E81ED6002367EE /* XivelyRequestable.m */,
+				093A661518E81ED6002367EE /* XivelySubscribable.h */,
+				093A661618E81ED6002367EE /* XivelySubscribable.m */,
+				093A661718E81ED6002367EE /* XivelySubscribableDelegate.h */,
+			);
+			path = XivelyObjectiveC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		093A657318E8157F002367EE /* CigarSentinel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093A65A918E8157F002367EE /* Build configuration list for PBXNativeTarget "CigarSentinel" */;
+			buildPhases = (
+				232C461A035F4954868A52F5 /* Check Pods Manifest.lock */,
+				093A657018E8157F002367EE /* Sources */,
+				093A657118E8157F002367EE /* Frameworks */,
+				093A657218E8157F002367EE /* Resources */,
+				42F35E63483D44E08127D70E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CigarSentinel;
+			productName = CigarSentinel;
+			productReference = 093A657418E8157F002367EE /* CigarSentinel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		093A659718E8157F002367EE /* CigarSentinelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093A65AC18E8157F002367EE /* Build configuration list for PBXNativeTarget "CigarSentinelTests" */;
+			buildPhases = (
+				093A659418E8157F002367EE /* Sources */,
+				093A659518E8157F002367EE /* Frameworks */,
+				093A659618E8157F002367EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093A659E18E8157F002367EE /* PBXTargetDependency */,
+			);
+			name = CigarSentinelTests;
+			productName = CigarSentinelTests;
+			productReference = 093A659818E8157F002367EE /* CigarSentinelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093A656C18E8157F002367EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Integration Specialists";
+				TargetAttributes = {
+					093A659718E8157F002367EE = {
+						TestTargetID = 093A657318E8157F002367EE;
+					};
+				};
+			};
+			buildConfigurationList = 093A656F18E8157F002367EE /* Build configuration list for PBXProject "CigarSentinel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 093A656B18E8157F002367EE;
+			productRefGroup = 093A657518E8157F002367EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093A657318E8157F002367EE /* CigarSentinel */,
+				093A659718E8157F002367EE /* CigarSentinelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		093A657218E8157F002367EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A661818E81ED6002367EE /* .gitignore in Resources */,
+				093A658E18E8157F002367EE /* Main_iPad.storyboard in Resources */,
+				093A659318E8157F002367EE /* Images.xcassets in Resources */,
+				093A658B18E8157F002367EE /* Main_iPhone.storyboard in Resources */,
+				093A658218E8157F002367EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093A659618E8157F002367EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A661918E81ED6002367EE /* .gitignore in Resources */,
+				093A65A418E8157F002367EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		232C461A035F4954868A52F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42F35E63483D44E08127D70E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093A657018E8157F002367EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A662C18E81ED6002367EE /* XivelySubscribable.m in Sources */,
+				093A659118E8157F002367EE /* ViewController.m in Sources */,
+				093A661C18E81ED6002367EE /* XivelyDatapointCollection.m in Sources */,
+				093A662018E81ED6002367EE /* XivelyDatastreamCollection.m in Sources */,
+				093A662818E81ED6002367EE /* XivelyModel.m in Sources */,
+				093A662A18E81ED6002367EE /* XivelyRequestable.m in Sources */,
+				093A662418E81ED6002367EE /* XivelyFeedCollection.m in Sources */,
+				093A661A18E81ED6002367EE /* XivelyAPI.m in Sources */,
+				093A661E18E81ED6002367EE /* XivelyDatapointModel.m in Sources */,
+				093A662218E81ED6002367EE /* XivelyDatastreamModel.m in Sources */,
+				093A65FB18E81DA4002367EE /* SRWebSocket.m in Sources */,
+				093A658818E8157F002367EE /* AppDelegate.m in Sources */,
+				093A662618E81ED6002367EE /* XivelyFeedModel.m in Sources */,
+				093A658418E8157F002367EE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093A659418E8157F002367EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A662718E81ED6002367EE /* XivelyFeedModel.m in Sources */,
+				093A661B18E81ED6002367EE /* XivelyAPI.m in Sources */,
+				093A662918E81ED6002367EE /* XivelyModel.m in Sources */,
+				093A662B18E81ED6002367EE /* XivelyRequestable.m in Sources */,
+				093A662318E81ED6002367EE /* XivelyDatastreamModel.m in Sources */,
+				093A65A618E8157F002367EE /* CigarSentinelTests.m in Sources */,
+				093A662D18E81ED6002367EE /* XivelySubscribable.m in Sources */,
+				093A661F18E81ED6002367EE /* XivelyDatapointModel.m in Sources */,
+				093A662118E81ED6002367EE /* XivelyDatastreamCollection.m in Sources */,
+				093A662518E81ED6002367EE /* XivelyFeedCollection.m in Sources */,
+				093A65FC18E81DA4002367EE /* SRWebSocket.m in Sources */,
+				093A661D18E81ED6002367EE /* XivelyDatapointCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093A659E18E8157F002367EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093A657318E8157F002367EE /* CigarSentinel */;
+			targetProxy = 093A659D18E8157F002367EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		093A658018E8157F002367EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A658118E8157F002367EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		093A658918E8157F002367EE /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A658A18E8157F002367EE /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		093A658C18E8157F002367EE /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A658D18E8157F002367EE /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		093A65A218E8157F002367EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A65A318E8157F002367EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		093A65A718E8157F002367EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		093A65A818E8157F002367EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093A65AA18E8157F002367EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882E9CCDEF0341B9A4167E43 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CigarSentinel/CigarSentinel-Prefix.pch";
+				INFOPLIST_FILE = "CigarSentinel/CigarSentinel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		093A65AB18E8157F002367EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882E9CCDEF0341B9A4167E43 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CigarSentinel/CigarSentinel-Prefix.pch";
+				INFOPLIST_FILE = "CigarSentinel/CigarSentinel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		093A65AD18E8157F002367EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CigarSentinel.app/CigarSentinel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CigarSentinel/CigarSentinel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CigarSentinelTests/CigarSentinelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		093A65AE18E8157F002367EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CigarSentinel.app/CigarSentinel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CigarSentinel/CigarSentinel-Prefix.pch";
+				INFOPLIST_FILE = "CigarSentinelTests/CigarSentinelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093A656F18E8157F002367EE /* Build configuration list for PBXProject "CigarSentinel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093A65A718E8157F002367EE /* Debug */,
+				093A65A818E8157F002367EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093A65A918E8157F002367EE /* Build configuration list for PBXNativeTarget "CigarSentinel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093A65AA18E8157F002367EE /* Debug */,
+				093A65AB18E8157F002367EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093A65AC18E8157F002367EE /* Build configuration list for PBXNativeTarget "CigarSentinelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093A65AD18E8157F002367EE /* Debug */,
+				093A65AE18E8157F002367EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 093A656C18E8157F002367EE /* Project object */;
+}

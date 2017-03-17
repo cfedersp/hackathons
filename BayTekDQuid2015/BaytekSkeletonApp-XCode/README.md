@@ -1,0 +1,1 @@
+A generic iOS app to test the BayTek protocol using a DQuidIO connected with a BayTek machine or the BayTek emulator

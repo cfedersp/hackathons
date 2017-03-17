@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "cliq"
+        }, 
+        "cliq": {
+            "applicationId": "nc3nC6OhDI4M7UHHRaFAn6rNqz3s4FimO9zYbX9D", 
+            "masterKey": "FfU2ceWJl62JSr1gUKSuRttcbDhgTTuEUYG3YJd9"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}

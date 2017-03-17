@@ -1,0 +1,12 @@
+hardware.i2c89.configure(CLOCK_SPEED_400_KHZ);
+port <- 0;
+for(local i = 2; i < 256; i++){
+if(hardware.i2c89.read(i,"", 1) != null){
+server.log(format("Device at address: 0x%02X",i));
+port = i;
+} else {
+    server.log(".");
+}
+
+}
+server.log(format("port: 0x%02X", port));

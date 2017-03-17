@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D9BD86182DF58300C6EE08 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BD85182DF58300C6EE08 /* FacebookSDK.framework */; };
+		09D9BD87182DF58300C6EE08 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BD85182DF58300C6EE08 /* FacebookSDK.framework */; };
+		09D9BE33182DFCC500C6EE08 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BE30182DFCC500C6EE08 /* CFNetwork.framework */; };
+		09D9BE34182DFCC500C6EE08 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BE31182DFCC500C6EE08 /* MobileCoreServices.framework */; };
+		09D9BE35182DFCC500C6EE08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BE32182DFCC500C6EE08 /* SystemConfiguration.framework */; };
+		09D9BE3A182E119900C6EE08 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BE39182E119900C6EE08 /* Parse.framework */; };
+		09D9BE3B182E119900C6EE08 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D9BE39182E119900C6EE08 /* Parse.framework */; };
+		09FC831C182E765600F6E6BF /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FC831B182E765600F6E6BF /* libicucore.dylib */; };
+		09FC831E182E766700F6E6BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FC831D182E766700F6E6BF /* Security.framework */; };
+		09FC8320182E7D7900F6E6BF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FC831F182E7D7900F6E6BF /* Firebase.framework */; };
+		3CDB2596182CCB6400B12043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB2595182CCB6400B12043 /* Foundation.framework */; };
+		3CDB2598182CCB6400B12043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB2597182CCB6400B12043 /* CoreGraphics.framework */; };
+		3CDB259A182CCB6400B12043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB2599182CCB6400B12043 /* UIKit.framework */; };
+		3CDB25A0182CCB6400B12043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CDB259E182CCB6400B12043 /* InfoPlist.strings */; };
+		3CDB25A2182CCB6400B12043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB25A1182CCB6400B12043 /* main.m */; };
+		3CDB25A6182CCB6400B12043 /* CQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB25A5182CCB6400B12043 /* CQAppDelegate.m */; };
+		3CDB25A8182CCB6400B12043 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDB25A7182CCB6400B12043 /* Images.xcassets */; };
+		3CDB25AF182CCB6400B12043 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB25AE182CCB6400B12043 /* XCTest.framework */; };
+		3CDB25B0182CCB6400B12043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB2595182CCB6400B12043 /* Foundation.framework */; };
+		3CDB25B1182CCB6400B12043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB2599182CCB6400B12043 /* UIKit.framework */; };
+		3CDB25B9182CCB6400B12043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CDB25B7182CCB6400B12043 /* InfoPlist.strings */; };
+		3CDB25BB182CCB6400B12043 /* cliqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB25BA182CCB6400B12043 /* cliqTests.m */; };
+		3CDB25C8182CCE0300B12043 /* CQSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB25C7182CCE0300B12043 /* CQSplashViewController.m */; };
+		3CDB25C9182CCE0300B12043 /* CQSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB25C7182CCE0300B12043 /* CQSplashViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CDB25B2182CCB6400B12043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CDB258A182CCB6400B12043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CDB2591182CCB6400B12043;
+			remoteInfo = cliq;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09D9BD85182DF58300C6EE08 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		09D9BE30182DFCC500C6EE08 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		09D9BE31182DFCC500C6EE08 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		09D9BE32182DFCC500C6EE08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		09D9BE39182E119900C6EE08 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		09FC831B182E765600F6E6BF /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		09FC831D182E766700F6E6BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		09FC831F182E7D7900F6E6BF /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		3CDB2592182CCB6400B12043 /* cliq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cliq.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDB2595182CCB6400B12043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CDB2597182CCB6400B12043 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CDB2599182CCB6400B12043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3CDB259D182CCB6400B12043 /* cliq-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cliq-Info.plist"; sourceTree = "<group>"; };
+		3CDB259F182CCB6400B12043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CDB25A1182CCB6400B12043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CDB25A3182CCB6400B12043 /* cliq-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cliq-Prefix.pch"; sourceTree = "<group>"; };
+		3CDB25A4182CCB6400B12043 /* CQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CQAppDelegate.h; sourceTree = "<group>"; };
+		3CDB25A5182CCB6400B12043 /* CQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQAppDelegate.m; sourceTree = "<group>"; };
+		3CDB25A7182CCB6400B12043 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3CDB25AD182CCB6400B12043 /* cliqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cliqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDB25AE182CCB6400B12043 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3CDB25B6182CCB6400B12043 /* cliqTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cliqTests-Info.plist"; sourceTree = "<group>"; };
+		3CDB25B8182CCB6400B12043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CDB25BA182CCB6400B12043 /* cliqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cliqTests.m; sourceTree = "<group>"; };
+		3CDB25C6182CCE0200B12043 /* CQSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQSplashViewController.h; sourceTree = "<group>"; };
+		3CDB25C7182CCE0300B12043 /* CQSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQSplashViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CDB258F182CCB6400B12043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FC831E182E766700F6E6BF /* Security.framework in Frameworks */,
+				09FC831C182E765600F6E6BF /* libicucore.dylib in Frameworks */,
+				09D9BE33182DFCC500C6EE08 /* CFNetwork.framework in Frameworks */,
+				09D9BE34182DFCC500C6EE08 /* MobileCoreServices.framework in Frameworks */,
+				09FC8320182E7D7900F6E6BF /* Firebase.framework in Frameworks */,
+				09D9BE35182DFCC500C6EE08 /* SystemConfiguration.framework in Frameworks */,
+				3CDB2598182CCB6400B12043 /* CoreGraphics.framework in Frameworks */,
+				09D9BD86182DF58300C6EE08 /* FacebookSDK.framework in Frameworks */,
+				3CDB259A182CCB6400B12043 /* UIKit.framework in Frameworks */,
+				09D9BE3A182E119900C6EE08 /* Parse.framework in Frameworks */,
+				3CDB2596182CCB6400B12043 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CDB25AA182CCB6400B12043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDB25AF182CCB6400B12043 /* XCTest.framework in Frameworks */,
+				09D9BD87182DF58300C6EE08 /* FacebookSDK.framework in Frameworks */,
+				3CDB25B1182CCB6400B12043 /* UIKit.framework in Frameworks */,
+				3CDB25B0182CCB6400B12043 /* Foundation.framework in Frameworks */,
+				09D9BE3B182E119900C6EE08 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CDB2589182CCB6400B12043 = {
+			isa = PBXGroup;
+			children = (
+				3CDB259B182CCB6400B12043 /* cliq */,
+				3CDB25B4182CCB6400B12043 /* cliqTests */,
+				3CDB2594182CCB6400B12043 /* Frameworks */,
+				3CDB2593182CCB6400B12043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CDB2593182CCB6400B12043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB2592182CCB6400B12043 /* cliq.app */,
+				3CDB25AD182CCB6400B12043 /* cliqTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CDB2594182CCB6400B12043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09FC831F182E7D7900F6E6BF /* Firebase.framework */,
+				09FC831D182E766700F6E6BF /* Security.framework */,
+				09FC831B182E765600F6E6BF /* libicucore.dylib */,
+				09D9BE39182E119900C6EE08 /* Parse.framework */,
+				09D9BE30182DFCC500C6EE08 /* CFNetwork.framework */,
+				09D9BE31182DFCC500C6EE08 /* MobileCoreServices.framework */,
+				09D9BE32182DFCC500C6EE08 /* SystemConfiguration.framework */,
+				09D9BD85182DF58300C6EE08 /* FacebookSDK.framework */,
+				3CDB2595182CCB6400B12043 /* Foundation.framework */,
+				3CDB2597182CCB6400B12043 /* CoreGraphics.framework */,
+				3CDB2599182CCB6400B12043 /* UIKit.framework */,
+				3CDB25AE182CCB6400B12043 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CDB259B182CCB6400B12043 /* cliq */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB25A4182CCB6400B12043 /* CQAppDelegate.h */,
+				3CDB25A5182CCB6400B12043 /* CQAppDelegate.m */,
+				3CDB25C6182CCE0200B12043 /* CQSplashViewController.h */,
+				3CDB25C7182CCE0300B12043 /* CQSplashViewController.m */,
+				3CDB25A7182CCB6400B12043 /* Images.xcassets */,
+				3CDB259C182CCB6400B12043 /* Supporting Files */,
+			);
+			path = cliq;
+			sourceTree = "<group>";
+		};
+		3CDB259C182CCB6400B12043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB259D182CCB6400B12043 /* cliq-Info.plist */,
+				3CDB259E182CCB6400B12043 /* InfoPlist.strings */,
+				3CDB25A1182CCB6400B12043 /* main.m */,
+				3CDB25A3182CCB6400B12043 /* cliq-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CDB25B4182CCB6400B12043 /* cliqTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB25BA182CCB6400B12043 /* cliqTests.m */,
+				3CDB25B5182CCB6400B12043 /* Supporting Files */,
+			);
+			path = cliqTests;
+			sourceTree = "<group>";
+		};
+		3CDB25B5182CCB6400B12043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB25B6182CCB6400B12043 /* cliqTests-Info.plist */,
+				3CDB25B7182CCB6400B12043 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CDB2591182CCB6400B12043 /* cliq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CDB25BE182CCB6400B12043 /* Build configuration list for PBXNativeTarget "cliq" */;
+			buildPhases = (
+				3CDB258E182CCB6400B12043 /* Sources */,
+				3CDB258F182CCB6400B12043 /* Frameworks */,
+				3CDB2590182CCB6400B12043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cliq;
+			productName = cliq;
+			productReference = 3CDB2592182CCB6400B12043 /* cliq.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CDB25AC182CCB6400B12043 /* cliqTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CDB25C1182CCB6400B12043 /* Build configuration list for PBXNativeTarget "cliqTests" */;
+			buildPhases = (
+				3CDB25A9182CCB6400B12043 /* Sources */,
+				3CDB25AA182CCB6400B12043 /* Frameworks */,
+				3CDB25AB182CCB6400B12043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CDB25B3182CCB6400B12043 /* PBXTargetDependency */,
+			);
+			name = cliqTests;
+			productName = cliqTests;
+			productReference = 3CDB25AD182CCB6400B12043 /* cliqTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CDB258A182CCB6400B12043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CQ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Chenchen Zheng";
+				TargetAttributes = {
+					3CDB25AC182CCB6400B12043 = {
+						TestTargetID = 3CDB2591182CCB6400B12043;
+					};
+				};
+			};
+			buildConfigurationList = 3CDB258D182CCB6400B12043 /* Build configuration list for PBXProject "cliq" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CDB2589182CCB6400B12043;
+			productRefGroup = 3CDB2593182CCB6400B12043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CDB2591182CCB6400B12043 /* cliq */,
+				3CDB25AC182CCB6400B12043 /* cliqTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CDB2590182CCB6400B12043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDB25A0182CCB6400B12043 /* InfoPlist.strings in Resources */,
+				3CDB25A8182CCB6400B12043 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CDB25AB182CCB6400B12043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDB25B9182CCB6400B12043 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CDB258E182CCB6400B12043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDB25A6182CCB6400B12043 /* CQAppDelegate.m in Sources */,
+				3CDB25C8182CCE0300B12043 /* CQSplashViewController.m in Sources */,
+				3CDB25A2182CCB6400B12043 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CDB25A9182CCB6400B12043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDB25BB182CCB6400B12043 /* cliqTests.m in Sources */,
+				3CDB25C9182CCE0300B12043 /* CQSplashViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CDB25B3182CCB6400B12043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CDB2591182CCB6400B12043 /* cliq */;
+			targetProxy = 3CDB25B2182CCB6400B12043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CDB259E182CCB6400B12043 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CDB259F182CCB6400B12043 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3CDB25B7182CCB6400B12043 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CDB25B8182CCB6400B12043 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CDB25BC182CCB6400B12043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CDB25BD182CCB6400B12043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CDB25BF182CCB6400B12043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chenchenzheng/ios\\ projects/cliq",
+					/Users/chenchenzheng/github/hackathons/launch2013/cliq/cliq,
+					/Users/charliefederspiel/projects/personalgit/hackathons/launch2013/spikes/cliq,
+					/Users/charliefederspiel/Downloads,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cliq/cliq-Prefix.pch";
+				INFOPLIST_FILE = "cliq/cliq-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3CDB25C0182CCB6400B12043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chenchenzheng/ios\\ projects/cliq",
+					/Users/chenchenzheng/github/hackathons/launch2013/cliq/cliq,
+					/Users/charliefederspiel/projects/personalgit/hackathons/launch2013/spikes/cliq,
+					/Users/charliefederspiel/Downloads,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cliq/cliq-Prefix.pch";
+				INFOPLIST_FILE = "cliq/cliq-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3CDB25C2182CCB6400B12043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cliq.app/cliq";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/charliefederspiel/projects/personalgit/hackathons/launch2013/spikes/cliq,
+					/Users/charliefederspiel/Downloads,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cliq/cliq-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cliqTests/cliqTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3CDB25C3182CCB6400B12043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cliq.app/cliq";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/charliefederspiel/projects/personalgit/hackathons/launch2013/spikes/cliq,
+					/Users/charliefederspiel/Downloads,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cliq/cliq-Prefix.pch";
+				INFOPLIST_FILE = "cliqTests/cliqTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CDB258D182CCB6400B12043 /* Build configuration list for PBXProject "cliq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDB25BC182CCB6400B12043 /* Debug */,
+				3CDB25BD182CCB6400B12043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CDB25BE182CCB6400B12043 /* Build configuration list for PBXNativeTarget "cliq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDB25BF182CCB6400B12043 /* Debug */,
+				3CDB25C0182CCB6400B12043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CDB25C1182CCB6400B12043 /* Build configuration list for PBXNativeTarget "cliqTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDB25C2182CCB6400B12043 /* Debug */,
+				3CDB25C3182CCB6400B12043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CDB258A182CCB6400B12043 /* Project object */;
+}

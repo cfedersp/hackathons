@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F61437D6-E8F0-49A7-AD10-CCA0E5E5486B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DQuidAppTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>41ED9D96F7846CD6ECC6257A08C8DD35A177282F</key>
+		<string>bitbucket.org:dquid/dquid-sdk-ios.git</string>
+		<key>D739DA6E5B308A4622B1008ACCFB44BF7AD9064D</key>
+		<string>bitbucket.org:dquid/dquid-testapp-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DQuidAppTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>41ED9D96F7846CD6ECC6257A08C8DD35A177282F</key>
+		<string>../../../dquid-sdk-ios</string>
+		<key>D739DA6E5B308A4622B1008ACCFB44BF7AD9064D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:dquid/dquid-testapp-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D739DA6E5B308A4622B1008ACCFB44BF7AD9064D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>41ED9D96F7846CD6ECC6257A08C8DD35A177282F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dquid-sdk-ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D739DA6E5B308A4622B1008ACCFB44BF7AD9064D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dquid-testapp-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,7 @@
+// Send a notification to all devices subscribed to the "Giants" channel.
+PFPush *push = [[PFPush alloc] init];
+//for each user in the cliq:
+[push setChannel:@"specificUsersChannelFromThatUsersProfile"];
+[push setMessage:@"{eventCreatorId:abcd123,firebaseChannel:tuvwx789,eventName:Bowling Extravaganza"];
+[push sendPushInBackground];
+

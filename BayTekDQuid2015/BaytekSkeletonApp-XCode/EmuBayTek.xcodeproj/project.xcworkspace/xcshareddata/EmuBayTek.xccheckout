@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>46E1C545-CA68-4675-BD6A-97B5EC74B6A5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EmuBayTek</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>572E3E416E6C49AAFB07F107862B2C78570B5032</key>
+		<string>bitbucket.org:dquid/baytekskeletonapp-xcode.git</string>
+		<key>5B25EA4E831249C1546372755AAAC269F6521C83</key>
+		<string>https://bitbucket.org/dquid/baytekprotocol-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EmuBayTek.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>572E3E416E6C49AAFB07F107862B2C78570B5032</key>
+		<string>../..</string>
+		<key>5B25EA4E831249C1546372755AAAC269F6521C83</key>
+		<string>../../../baytekprotocol-ios</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:dquid/baytekskeletonapp-xcode.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>572E3E416E6C49AAFB07F107862B2C78570B5032</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B25EA4E831249C1546372755AAAC269F6521C83</string>
+			<key>IDESourceControlWCCName</key>
+			<string>baytekprotocol-ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>572E3E416E6C49AAFB07F107862B2C78570B5032</string>
+			<key>IDESourceControlWCCName</key>
+			<string>baytekskeletonapp-xcode</string>
+		</dict>
+	</array>
+</dict>
+</plist>

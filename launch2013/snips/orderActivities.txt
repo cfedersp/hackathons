@@ -1,0 +1,2 @@
+[query orderByAscending:@"displayOrder"];
+   [query addAscendingOrder:@"name"];

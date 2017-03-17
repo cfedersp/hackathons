@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">marley</string>
+    <string name="action_settings">Settings</string>
+    <color name="white">#FFFFFF</color>
+    <string name="home.switch.label">Online</string>
+    <string name="home.switch.working">Working</string>
+    <string name="home.switch.slacking">Slacking</string>
+</resources>

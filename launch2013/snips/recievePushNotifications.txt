@@ -1,0 +1,28 @@
+[application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound]
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [PFPush storeDeviceToken:deviceToken];
+    
+    // Get the users Push Channel from their profile
+    
+    //There seems to be 2 ways to subscribe to a channel - thru PFInstallation or thru PFPush
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:@"channelNameFromProfile" forKey:@"channels"];
+    [currentInstallation saveInBackground];
+    
+    [PFPush subscribeToChannelInBackground:@"channelNameFromProfile"];
+}
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog("Failed to register for push notifications,%@", error);
+}
+- (void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    //look at notification - get creator id from notification
+    
+    //get creator profile from parse
+    
+    //get event document from FireBase
+}
+
